@@ -1,38 +1,206 @@
-.App {
-  text-align: center;
+/* ============================== Resets ==============================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+
+
+
+
+
+
+/* ============================== Page Style ==============================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+  --main-orange: #f25f3a;
+  --dark-blue: #242d52;
+  --dark-grayish-blue: #9095a7;
+  --very-dark-blue: #1d1e25;
+  --very-pale-red: #ffefeb;
+  --very-light-gray: #fafafa;
+
+  
+
+  --ff-main: 'Be Vietnam Pro', sans-serif;
+  --fw-regular: 400;
+  --fw-medium: 600;
+  --fw-bold: 700;
+
+
+  --transition: all 0.2s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+html {
+  font-family: var(--ff-main);
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+  letter-spacing: 1px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+body {
+  background-color: var(--very-light-gray);
+  color: var(--very-dark-blue);
 }
 
-.App-link {
-  color: #61dafb;
+
+
+@keyframes menuEnter {
+	0% {
+		opacity: 0;
+	} 100% {
+		opacity: 1;
+	}
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes enterFromLeft {
+	0% {
+		transform: translateX(-100%);
+	} 100% {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes enterFromRight {
+	0% {
+		transform: translateX(100%);
+	} 100% {
+		transform: translateX(0%);
+	}
+}
+
+
+
+
+
+
+
+
+
+/* ============================== BG Images ==============================*/
+header {
+	background-origin: content-box;
+    background-image: url("bg-tablet-pattern.svg"), url("bg-tablet-pattern.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100vw;
+    background-position-x: 25vw, 72vw;
+    background-position-y: -35px, 500px;
+}
+
+@media (min-width: 360px) {
+	header {
+    background-size: 100vw;
+    background-position-x: 25vw, 72vw;
+    background-position-y: -50px, 400px;
+	}
+}
+
+@media (min-width: 540px) {
+	header {
+    background-size: 80vw;
+    background-position-x: 35vw, 72vw;
+    background-position-y: -60px, 480px;
+	}
+}
+
+@media (min-width: 620px) {
+	header {
+    background-size: 65vw;
+    background-position-x: 45vw, 72vw;
+    background-position-y: -80px, 450px;
+	}
+}
+
+
+@media (min-width: 768px) {
+	header {
+		background-size: 600px;
+		background-position-x: 35vw;
+		background-position-y: -100px;
+	}
+
+	main {
+		background-origin: content-box;
+		background-image: url("bg-tablet-pattern.svg");
+		background-repeat: no-repeat;
+		background-size: 600px;
+		background-position-x: -350px;
+		background-position-y: 430px;
+	}
+}
+
+
+@media (min-width: 800px) {
+	header {
+		background-size: 750px;
+		background-position-x: 40vw;
+		background-position-y: -140px;
+	}
+}
+
+@media (min-width: 1220px) {
+	header {
+		background-size: 800px;
+		background-position-x: 60vw;
+		background-position-y: -250px;
+	}
+
+	main {
+		background-origin: content-box;
+		background-image: url("bg-tablet-pattern.svg");
+		background-repeat: no-repeat;
+		background-size: 800px;
+		background-position-x: -350px;
+		background-position-y: 200px;
+	}
 }

@@ -1,0 +1,23 @@
+.swiper-slide {
+    padding-bottom: 1.3rem;
+
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid var(--main-orange);
+}
+  
+.swiper-pagination-bullet-active {
+    background: var(--main-orange);
+    border: 2px solid transparent;
+}
+
+@media (min-width: 1220px) {
+    .swiper-pagination-bullet {
+        display: none;
+    }
+}
