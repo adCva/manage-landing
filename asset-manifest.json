@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/manage-landing/static/css/main.96470ef9.chunk.css",
+    "main.js": "/manage-landing/static/js/main.062b5622.chunk.js",
+    "main.js.map": "/manage-landing/static/js/main.062b5622.chunk.js.map",
+    "runtime-main.js": "/manage-landing/static/js/runtime-main.98907d2a.js",
+    "runtime-main.js.map": "/manage-landing/static/js/runtime-main.98907d2a.js.map",
+    "static/css/2.c50a3482.chunk.css": "/manage-landing/static/css/2.c50a3482.chunk.css",
+    "static/js/2.7987b273.chunk.js": "/manage-landing/static/js/2.7987b273.chunk.js",
+    "static/js/2.7987b273.chunk.js.map": "/manage-landing/static/js/2.7987b273.chunk.js.map",
+    "index.html": "/manage-landing/index.html",
+    "static/css/2.c50a3482.chunk.css.map": "/manage-landing/static/css/2.c50a3482.chunk.css.map",
+    "static/css/main.96470ef9.chunk.css.map": "/manage-landing/static/css/main.96470ef9.chunk.css.map",
+    "static/js/2.7987b273.chunk.js.LICENSE.txt": "/manage-landing/static/js/2.7987b273.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/manage-landing/static/media/bg-tablet-pattern.b6990a98.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.98907d2a.js",
+    "static/css/2.c50a3482.chunk.css",
+    "static/js/2.7987b273.chunk.js",
+    "static/css/main.96470ef9.chunk.css",
+    "static/js/main.062b5622.chunk.js"
+  ]
+}
